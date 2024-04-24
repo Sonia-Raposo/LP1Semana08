@@ -15,5 +15,12 @@ classDiagram
     Cat <|--IMammal
     Bat <|--IMammal
 
+    class ICanFly
+    <<interface>> ICanFly
+    Bat <|--ICanFly
+    Bee <|--ICanFly
+
+    IMammal <|.. NumberOfNipples
+    ICanFly <|.. NumberOfWings
 
 ```
