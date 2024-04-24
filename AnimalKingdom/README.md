@@ -9,6 +9,11 @@ classDiagram
     Animal <|-- Bat
     Animal <|-- Bee
 
+    class IMammal
+    <<interface>> IMammal
+    Dog <|--IMammal
+    Cat <|--IMammal
+    Bat <|--IMammal
 
 
 ```
