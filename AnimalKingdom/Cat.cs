@@ -6,5 +6,12 @@
         {
             return base.Sound() + "Miau";
         }
+
+        public int NumberOfNipples { get; }
+
+        public Cat()
+        {
+            NumberOfNipples = 6;
+        }
     }
 }
