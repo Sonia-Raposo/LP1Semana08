@@ -126,7 +126,10 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </param>
         private static void ListPlayers(IEnumerable<Player> playersToList)
         {
-            
+            foreach (Player player in playersToList)
+            {
+                Console.WriteLine($"{player.Name}: {player.Score}");
+            }
         }
 
         /// <summary>
