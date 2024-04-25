@@ -144,6 +144,10 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
             Console.WriteLine("");
 
 
+            foreach (Player player in GetPlayersWithScoreGreaterThan(minScore))
+            {
+                Console.WriteLine($"{player.Name}: {player.Score}");
+            }
         }
 
         /// <summary>
