@@ -170,6 +170,7 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
             }
 
             return playerScore;
+            
         }
     }
 }
