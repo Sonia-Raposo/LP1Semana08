@@ -13,14 +13,14 @@ classDiagram
 
     class IMammal
     <<interface>> IMammal
-    Dog <|--IMammal
-    Cat <|--IMammal
-    Bat <|--IMammal
+    Dog ..|> IMammal
+    Cat ..|>IMammal
+    Bat ..|>IMammal
 
     class ICanFly
     <<interface>> ICanFly
-    Bat <|--ICanFly
-    Bee <|--ICanFly
+    Bat ..|>ICanFly
+    Bee ..|>ICanFly
 
     IMammal <|.. NumberOfNipples
     ICanFly <|.. NumberOfWings
