@@ -4,6 +4,8 @@
 
 classDiagram
 
+    class Animal
+    <<abstract>> Animal
     Animal <|-- Dog
     Animal <|-- Cat
     Animal <|-- Bat
