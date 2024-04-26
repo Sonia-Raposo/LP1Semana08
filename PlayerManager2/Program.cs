@@ -165,12 +165,10 @@ namespace PlayerManager2 // >>> Change to PlayerManager2 for exercise 4 <<< //
             {
                 if (player.Score > minScore)
                 {
-                    playerScore.Add(player);
+                    yield return player;
                 }
+    
             }
-
-            return playerScore;
-            
         }
     }
 }
