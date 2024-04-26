@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -16,5 +17,20 @@ namespace PlayerManager3
             Name = name;
             Score = score;
         }
+
+        public int CompareTo(Player other)
+        {
+            if (other == null) return 1;
+
+            if(Score > other.Score) return 1;
+
+            if(Score < other.Score) return -1;
+
+            else
+            {
+                return 0;
+            }
+        }
+
     }
 }
